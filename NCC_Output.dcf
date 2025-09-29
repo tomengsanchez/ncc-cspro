@@ -1,0 +1,1004 @@
+{
+  "software": "CSPro", 
+  "version": 8.0, 
+  "fileType": "dictionary", 
+  "name": "NCC_OUTPUT_DICT", 
+  "labels": [ { "text": "NCC_Output" } ], 
+  "security": {
+    "allowDataViewerModifications": true, 
+    "allowExport": true, 
+    "cachedPasswordMinutes": 0, 
+    "settings": "71846d515b732751ee2bb2ab0eb590b8f76b51bdfe9def1c972ec0115d367490"
+  }, 
+  "readOptimization": true, 
+  "recordType": {
+    "start": 1, 
+    "length": 1
+  }, 
+  "defaults": {
+    "decimalMark": true, 
+    "zeroFill": false
+  }, 
+  "relativePositions": true, 
+  "levels": [
+    {
+      "name": "NCC_OUTPUT_LEVEL", 
+      "labels": [ { "text": "NCC_Output Level" } ], 
+      "ids": {
+        "items": [
+          {
+            "name": "NCC_OUTPUT_ID", 
+            "labels": [ { "text": "NCC_Output Identification" } ], 
+            "contentType": "alpha", 
+            "start": 2, 
+            "length": 70
+          }
+        ]
+      }, 
+      "records": [
+        {
+          "name": "NCC_OUTPUT_REC", 
+          "labels": [ { "text": "NCC_Output Record" } ], 
+          "recordType": "1", 
+          "occurrences": {
+            "required": true, 
+            "maximum": 1
+          }, 
+          "items": [
+            {
+              "name": "DATE_OF_SURVEY", 
+              "labels": [ { "text": "Date of Survey: " } ], 
+              "contentType": "numeric", 
+              "length": 8, 
+              "zeroFill": false
+            }, 
+            {
+              "name": "NAME_OF_INTERVIEWER", 
+              "labels": [ { "text": "Name of Interviewer" } ], 
+              "contentType": "alpha", 
+              "length": 50
+            }, 
+            {
+              "name": "MODE_OF_SURVEY", 
+              "labels": [ { "text": "Mode of Survey" } ], 
+              "contentType": "alpha", 
+              "length": 50, 
+              "valueSets": [
+                {
+                  "name": "MODE_OF_SURVEY_VS1", 
+                  "labels": [ { "text": "Mode of Survey" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Phone" } ], 
+                      "pairs": [ { "value": "a.Phone" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Face-to-face" } ], 
+                      "pairs": [ { "value": "b.Face-to-face" } ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "name": "A_RESPONDENT_PROFILE", 
+          "labels": [ { "text": "A.Respondent Profile" } ], 
+          "recordType": "2", 
+          "occurrences": {
+            "required": true, 
+            "maximum": 1
+          }, 
+          "items": [
+            {
+              "name": "A1_RESPONDENT_S_FIRST_NAME", 
+              "labels": [ { "text": "A1.Respondent's First Name" } ], 
+              "contentType": "alpha", 
+              "length": 50
+            }, 
+            {
+              "name": "A1_RESPONDENT_S_MIDDLE_NAME", 
+              "labels": [ { "text": "A1.Respondent's Middle Name" } ], 
+              "contentType": "alpha", 
+              "length": 50
+            }, 
+            {
+              "name": "A1_RESPONDENT_S_LAST_NAME", 
+              "labels": [ { "text": "A1.Respondent's Last Name" } ], 
+              "contentType": "alpha", 
+              "length": 50
+            }, 
+            {
+              "name": "A2_MUNICIPALITY", 
+              "labels": [ { "text": "A2.Municipality" } ], 
+              "contentType": "alpha", 
+              "length": 50, 
+              "valueSets": [
+                {
+                  "name": "A2_MUNICIPALITY_VS1", 
+                  "labels": [ { "text": "A2.Municipality" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Mabalacat" } ], 
+                      "pairs": [ { "value": "a.Mabalacat" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Bamban" } ], 
+                      "pairs": [ { "value": "b.Bamban" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Capas" } ], 
+                      "pairs": [ { "value": "c.Capas" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "A3_BARANGAY_MABALACAT", 
+              "labels": [ { "text": "A3.Barangay (Mabalacat)" } ], 
+              "contentType": "alpha", 
+              "length": 120, 
+              "valueSets": [
+                {
+                  "name": "A3_BARANGAY_MABALACAT_VS1", 
+                  "labels": [ { "text": "A3.Barangay (Mabalacat)" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Atlu-Bola (San Isidro)" } ], 
+                      "pairs": [ { "value": "a.Atlu-Bola (San Isidro)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Bical (San Roque)" } ], 
+                      "pairs": [ { "value": "b.Bical (San Roque)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Bundagul (San Antonio)" } ], 
+                      "pairs": [ { "value": "c.Bundagul (San Antonio)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Cacutud (San Roque)" } ], 
+                      "pairs": [ { "value": "d.Cacutud (San Roque)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Calumpang (San Jose Obrero)" } ], 
+                      "pairs": [ { "value": "e.Calumpang (San Jose Obrero)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Camachiles (Inmaculada Concepcion)" } ], 
+                      "pairs": [ { "value": "f.Camachiles (Inmaculada Concepcion)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Dapdap (including Madapdap Resettlement: Santo Rosario)" } ], 
+                      "pairs": [ { "value": "g.Dapdap (including Madapdap Resettlement: Santo Rosario)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Dau (Center Business Downtown: San Isidro)" } ], 
+                      "pairs": [ { "value": "h.Dau (Center Business Downtown: San Isidro)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Dolores (Virgen de Dolores)" } ], 
+                      "pairs": [ { "value": "i.Dolores (Virgen de Dolores)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Duquit (San Jose)" } ], 
+                      "pairs": [ { "value": "j.Duquit (San Jose)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Lakandula (Virgen de Fatima)" } ], 
+                      "pairs": [ { "value": "k.Lakandula (Virgen de Fatima)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Mabiga (San Rafael Arkanghel)" } ], 
+                      "pairs": [ { "value": "l.Mabiga (San Rafael Arkanghel)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Macapagal Village (Inmaculada Concepcion)" } ], 
+                      "pairs": [ { "value": "m.Macapagal Village (Inmaculada Concepcion)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Mamatitang (San Roque)" } ], 
+                      "pairs": [ { "value": "n.Mamatitang (San Roque)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Mangalit (San Jose Obrero)" } ], 
+                      "pairs": [ { "value": "o.Mangalit (San Jose Obrero)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Marcos Village (San Martin de Porres)" } ], 
+                      "pairs": [ { "value": "p.Marcos Village (San Martin de Porres)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Mawaque (Sta. Teresita)" } ], 
+                      "pairs": [ { "value": "q.Mawaque (Sta. Teresita)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Paralayunan (San Antonio)" } ], 
+                      "pairs": [ { "value": "r.Paralayunan (San Antonio)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Poblacion (Virgen de Gracia)" } ], 
+                      "pairs": [ { "value": "s.Poblacion (Virgen de Gracia)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "San Francisco (San Francisco de Assisi)" } ], 
+                      "pairs": [ { "value": "t.San Francisco (San Francisco de Assisi)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "San Joaquin (San Joaquin y Sta. Ana)" } ], 
+                      "pairs": [ { "value": "u.San Joaquin (San Joaquin y Sta. Ana)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Santa Ines (Sta. Ines de Roma)" } ], 
+                      "pairs": [ { "value": "v.Santa Ines (Sta. Ines de Roma)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Santa Maria (Sta. Maria Magdalena)" } ], 
+                      "pairs": [ { "value": "w.Santa Maria (Sta. Maria Magdalena)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Santo Rosario (Virgen Santo Rosario)" } ], 
+                      "pairs": [ { "value": "x.Santo Rosario (Virgen Santo Rosario)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Sapang Balen (San Carlos Borromeo)" } ], 
+                      "pairs": [ { "value": "y.Sapang Balen (San Carlos Borromeo)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Sapang Biabas (including Mauaque Resettlement: San Vicente Ferrer)" } ], 
+                      "pairs": [ { "value": "z.Sapang Biabas (including Mauaque Resettlement: San Vicente Ferrer)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Tabun (San Isidro)" } ], 
+                      "pairs": [ { "value": "aa.Tabun (San Isidro)" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "A3_BARANGAY_BAMBAN", 
+              "labels": [ { "text": "A3.Barangay (Bamban)" } ], 
+              "contentType": "alpha", 
+              "length": 120, 
+              "valueSets": [
+                {
+                  "name": "A3_BARANGAY_BAMBAN_VS1", 
+                  "labels": [ { "text": "A3.Barangay (Bamban)" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Anupul" } ], 
+                      "pairs": [ { "value": "a.Anupul" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Banaba" } ], 
+                      "pairs": [ { "value": "b.Banaba" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Bangcu" } ], 
+                      "pairs": [ { "value": "c.Bangcu" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Culubasa" } ], 
+                      "pairs": [ { "value": "d.Culubasa" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Dela Cruz" } ], 
+                      "pairs": [ { "value": "e.Dela Cruz" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "La Paz" } ], 
+                      "pairs": [ { "value": "f.La Paz" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Lourdes" } ], 
+                      "pairs": [ { "value": "g.Lourdes" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Malonzo" } ], 
+                      "pairs": [ { "value": "h.Malonzo" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "San Nicolas" } ], 
+                      "pairs": [ { "value": "i.San Nicolas" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "San Pedro" } ], 
+                      "pairs": [ { "value": "j.San Pedro" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "San Rafael" } ], 
+                      "pairs": [ { "value": "k.San Rafael" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "San Roque" } ], 
+                      "pairs": [ { "value": "l.San Roque" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "San Vicente" } ], 
+                      "pairs": [ { "value": "m.San Vicente" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Santo Niño" } ], 
+                      "pairs": [ { "value": "n.Santo Niño" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Virgen de los Remedios" } ], 
+                      "pairs": [ { "value": "o.Virgen de los Remedios" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "A3_BARANGAY_CAPAS", 
+              "labels": [ { "text": "A3.Barangay (Capas)" } ], 
+              "contentType": "alpha", 
+              "length": 120, 
+              "valueSets": [
+                {
+                  "name": "A3_BARANGAY_CAPAS_VS1", 
+                  "labels": [ { "text": "A3.Barangay (Capas)" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Aranguren" } ], 
+                      "pairs": [ { "value": "a.Aranguren" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Bueno" } ], 
+                      "pairs": [ { "value": "b.Bueno" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Cristo Rey" } ], 
+                      "pairs": [ { "value": "c.Cristo Rey" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Cubcub" } ], 
+                      "pairs": [ { "value": "d.Cubcub" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Cutcut I" } ], 
+                      "pairs": [ { "value": "e.Cutcut I" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Cutcut II" } ], 
+                      "pairs": [ { "value": "f.Cutcut II" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Dolores" } ], 
+                      "pairs": [ { "value": "g.Dolores" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Estrada" } ], 
+                      "pairs": [ { "value": "h.Estrada" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Lawy" } ], 
+                      "pairs": [ { "value": "i.Lawy" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Manga" } ], 
+                      "pairs": [ { "value": "j.Manga" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Manlapig" } ], 
+                      "pairs": [ { "value": "k.Manlapig" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Maruglu" } ], 
+                      "pairs": [ { "value": "l.Maruglu" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "O'Donnell" } ], 
+                      "pairs": [ { "value": "m.O'Donnell" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Santa Juliana" } ], 
+                      "pairs": [ { "value": "n.Santa Juliana" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Santa Lucia" } ], 
+                      "pairs": [ { "value": "o.Santa Lucia" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Santa Rita" } ], 
+                      "pairs": [ { "value": "p.Santa Rita" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Santo Domingo 1st" } ], 
+                      "pairs": [ { "value": "q.Santo Domingo 1st" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Santo Domingo 2nd" } ], 
+                      "pairs": [ { "value": "r.Santo Domingo 2nd" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Santo Rosario" } ], 
+                      "pairs": [ { "value": "s.Santo Rosario" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Talaga" } ], 
+                      "pairs": [ { "value": "t.Talaga" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "A4_CONTACT_NO", 
+              "labels": [ { "text": "A4.Contact No." } ], 
+              "contentType": "numeric", 
+              "length": 10, 
+              "zeroFill": false
+            }, 
+            {
+              "name": "A5_AGE", 
+              "labels": [ { "text": "A5.Age (Edad)" } ], 
+              "contentType": "numeric", 
+              "length": 10, 
+              "zeroFill": false
+            }, 
+            {
+              "name": "A6_SEX", 
+              "labels": [ { "text": "A6.Sex (Kasarian)" } ], 
+              "contentType": "alpha", 
+              "length": 50, 
+              "valueSets": [
+                {
+                  "name": "A6_SEX_VS1", 
+                  "labels": [ { "text": "A6.Sex (Kasarian)" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Male" } ], 
+                      "pairs": [ { "value": "a.Male" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Female" } ], 
+                      "pairs": [ { "value": "b.Female" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "A7_CIVIL_STATUS", 
+              "labels": [ { "text": "A7.Civil Status (Sibil na Katayuan)" } ], 
+              "contentType": "alpha", 
+              "length": 50, 
+              "valueSets": [
+                {
+                  "name": "A7_CIVIL_STATUS_VS1", 
+                  "labels": [ { "text": "A7.Civil Status (Sibil na Katayuan)" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Single (Walang asawa)" } ], 
+                      "pairs": [ { "value": "a.Single (Walang asawa)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Married (May-asawa)" } ], 
+                      "pairs": [ { "value": "b.Married (May-asawa)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Live-in" } ], 
+                      "pairs": [ { "value": "c.Live-in" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Widowed (Balo)" } ], 
+                      "pairs": [ { "value": "d.Widowed (Balo)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Separated (Hiwalay)" } ], 
+                      "pairs": [ { "value": "e.(Hiwalay)" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "A8_ETHNICITY", 
+              "labels": [ { "text": "A8.Ethnicity (Etnisidad)" } ], 
+              "contentType": "alpha", 
+              "length": 50, 
+              "valueSets": [
+                {
+                  "name": "A8_ETHNICITY_VS1", 
+                  "labels": [ { "text": "A8.Ethnicity (Etnisidad)" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Tagalog" } ], 
+                      "pairs": [ { "value": "a.Tagalog" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Bisaya" } ], 
+                      "pairs": [ { "value": "b.Bisaya" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Ilocano" } ], 
+                      "pairs": [ { "value": "c.Ilocano" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Kapampangan" } ], 
+                      "pairs": [ { "value": "d.Kapampangan" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Ilonggo" } ], 
+                      "pairs": [ { "value": "e.Ilonggo" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Bikol" } ], 
+                      "pairs": [ { "value": "f.Bikol" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Waray" } ], 
+                      "pairs": [ { "value": "g.Waray" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Pangasinense" } ], 
+                      "pairs": [ { "value": "h.Pangasinense" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy): " } ], 
+                      "pairs": [ { "value": "i.Others, please specify" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "A8_OTHERS_PLEASE_SPECIFY", 
+              "labels": [ { "text": "A8.Others, please specify (Iba pa, pakitukoy)" } ], 
+              "contentType": "alpha", 
+              "length": 100
+            }, 
+            {
+              "name": "A9_RELIGION", 
+              "labels": [ { "text": "A9.Religion " } ], 
+              "contentType": "alpha", 
+              "length": 50, 
+              "valueSets": [
+                {
+                  "name": "A9_RELIGION_VS1", 
+                  "labels": [ { "text": "A9.Religion " } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Roman Catholic" } ], 
+                      "pairs": [ { "value": "a.Roman Catholic" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Islam" } ], 
+                      "pairs": [ { "value": "b.Islam" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Iglesia ni Cristo" } ], 
+                      "pairs": [ { "value": "c.Iglesia ni Cristo" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Seventh Day Adventist" } ], 
+                      "pairs": [ { "value": "d.Seventh Day Adventist" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Aglipay" } ], 
+                      "pairs": [ { "value": "e.Aglipay" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Jehovah's Witness" } ], 
+                      "pairs": [ { "value": "f.Jehovah's Witness" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy): " } ], 
+                      "pairs": [ { "value": "g.Others, please specify" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "A9_OTHERS_PLEASE_SPECIFY", 
+              "labels": [ { "text": "A9.Others, please specify (Iba pa, pakitukoy)" } ], 
+              "contentType": "alpha", 
+              "length": 100
+            }, 
+            {
+              "name": "A10_SECTOR", 
+              "labels": [ { "text": "A10.Sector" } ], 
+              "contentType": "alpha", 
+              "length": 70, 
+              "valueSets": [
+                {
+                  "name": "A10_SECTOR_VS1", 
+                  "labels": [ { "text": "A10.Sector" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Farmers" } ], 
+                      "pairs": [ { "value": "a.Farmers" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Youth" } ], 
+                      "pairs": [ { "value": "b.Youth" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "NGO/Civil Society" } ], 
+                      "pairs": [ { "value": "c.NGO/Civil Society" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Religious Sector" } ], 
+                      "pairs": [ { "value": "d.Religious Sector" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Business Sector" } ], 
+                      "pairs": [ { "value": "e.Business Sector" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Women's Group" } ], 
+                      "pairs": [ { "value": "f.Women's Group" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Transport Group" } ], 
+                      "pairs": [ { "value": "g.Transport Group" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Senior Citizen" } ], 
+                      "pairs": [ { "value": "h.Senior Citizen" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Health Sector" } ], 
+                      "pairs": [ { "value": "i.Health Sector" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "PNP/Barangay Tanod" } ], 
+                      "pairs": [ { "value": "j.PNP/Barangay Tanod" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Teacher's Association/Academe" } ], 
+                      "pairs": [ { "value": "k.Teacher's Association/Academe" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "PWD" } ], 
+                      "pairs": [ { "value": "l.PWD" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "LGU/Brgy. Council Representative" } ], 
+                      "pairs": [ { "value": "m.LGU/Brgy. Council Representative" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy)" } ], 
+                      "pairs": [ { "value": "n.Others, please specify (Iba pa, pakitukoy)" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "A10_OTHERS_PLEASE_SPECIFY", 
+              "labels": [ { "text": "A10.Others, please specify (Iba pa, pakitukoy)" } ], 
+              "contentType": "alpha", 
+              "length": 100
+            }
+          ]
+        }, 
+        {
+          "name": "B_PROJECT_AWARENESS_AND_ACCEPTANCE", 
+          "labels": [ { "text": "B.ProjectAwarenessandAccept." } ], 
+          "recordType": "3", 
+          "occurrences": {
+            "required": true, 
+            "maximum": 1
+          }, 
+          "items": [
+            {
+              "name": "B1_WHAT_DO_YOU_THINK_ARE_THE_PERSISTENT_ENVIRONM", 
+              "labels": [ { "text": "B1.What do you think are the persistent environmental problems in your community? (Can be multiple responses) (Sa iyong palagay, ano ang mga paulit-ulit na problema sa kalikasan sa inyong komunidad? (Maaaring pumili ng higit sa isa))" } ], 
+              "contentType": "alpha", 
+              "length": 11, 
+              "valueSets": [
+                {
+                  "name": "B1_WHAT_DO_YOU_THINK_ARE_THE_PERSISTENT_ENVIRONM_VS1", 
+                  "labels": [ { "text": "B1.What do you think are the persistent environmental problems in your community? (Can be multiple responses) (Sa iyong palagay, ano ang mga paulit-ulit na problema sa kalikasan sa inyong komunidad? (Maaaring pumili ng higit sa isa))" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Problems with solid waste management or garbage disposal (Problema sa basura)" } ], 
+                      "pairs": [ { "value": "a" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Dirty water or liquid waste from households or factories (Maruming Tubig)" } ], 
+                      "pairs": [ { "value": "b" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Air pollution from vehicles and/or factories (Polusyon sa hangin mula sa mga sasakyan at pabrika)" } ], 
+                      "pairs": [ { "value": "c" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Frequent and widespread flooding (Madalas at malawakang pagbaha) " } ], 
+                      "pairs": [ { "value": "d" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Environmental degradation like deforestation and the death of animals (Pagkasira ng kalikasan)" } ], 
+                      "pairs": [ { "value": "e" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Drought or lack of water (Tagtuyot o kakulangan sa tubig)" } ], 
+                      "pairs": [ { "value": "f" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Noise and Vibration (Sobrang ingay at pagyanig)" } ], 
+                      "pairs": [ { "value": "g" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Loss of various types of plants and animals or “Biodiversity Loss” (Mababawasan ang mga uri ng halaman at hayop) " } ], 
+                      "pairs": [ { "value": "h" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Extreme heat or “heat wave” (Sobrang init na panahon) " } ], 
+                      "pairs": [ { "value": "i" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "None (Wala)" } ], 
+                      "pairs": [ { "value": "j" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy)" } ], 
+                      "pairs": [ { "value": "k" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "B1_OTHERS_PLEASE_SPECIFY", 
+              "labels": [ { "text": "B1.Others, please specify (Iba pa, pakitukoy)" } ], 
+              "contentType": "alpha", 
+              "length": 100
+            }, 
+            {
+              "name": "B2_HAVE_YOU_HEARD_ABOUT_THE_PROPOSED_PROJECT_BEF", 
+              "labels": [ { "text": "B2.Have you heard about the proposed project before? (Pamilyar ka na ba sa panukalang proyekto/Narinig mo na ba ito noon?)" } ], 
+              "contentType": "alpha", 
+              "length": 15, 
+              "valueSets": [
+                {
+                  "name": "B2_HAVE_YOU_HEARD_ABOUT_THE_PROPOSED_PROJECT_BEF_VS1", 
+                  "labels": [ { "text": "B2.Have you heard about the proposed project before? (Pamilyar ka na ba sa panukalang proyekto/Narinig mo na ba ito noon?)" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Yes (Oo)" } ], 
+                      "pairs": [ { "value": "a.Yes (Oo)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "No (Hindi)" } ], 
+                      "pairs": [ { "value": "b.No (Hindi)" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "B2_1WHERE_DID_YOU_LEARN_ABOUT_THE_PROJECT", 
+              "labels": [ { "text": "B2.1.Where did you learn about the project? (Saan mo nalaman ang proyekto?)" } ], 
+              "contentType": "alpha", 
+              "length": 150, 
+              "valueSets": [
+                {
+                  "name": "B2_1WHERE_DID_YOU_LEARN_ABOUT_THE_PROJECT_VS1", 
+                  "labels": [ { "text": "B2.1.Where did you learn about the project? (Saan mo nalaman ang proyekto?)" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Consultation Meeting with DOTr/LGU/EcosysCorp (Consultation Meeting kasama ang DOTr/LGU/EcosysCorp)" } ], 
+                      "pairs": [ { "value": "a.Consultation Meeting with DOTr/LGU/EcosysCorp (Consultation Meeting kasama ang DOTr/LGU/EcosysCorp)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Meeting with the Barangay (Meeting kasama ang Barangay)" } ], 
+                      "pairs": [ { "value": "b.Meeting with the Barangay (Meeting kasama ang Barangay)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Poster, brochure, and/or public announcement (Poster, brochure, at public announcement)" } ], 
+                      "pairs": [ { "value": "c.Poster, brochure, and/or public announcement (Poster, brochure, at public announcement)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Surveys" } ], 
+                      "pairs": [ { "value": "d.Surveys" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Television/Radio/Newspaper (Telebisyon/Radyo/Newspaper)" } ], 
+                      "pairs": [ { "value": "e.(Telebisyon/Radyo/Newspaper)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Neighbors/Work Colleagues (Mga kapitbahay o mga kasama sa trabaho)" } ], 
+                      "pairs": [ { "value": "f.Neighbors/Work Colleagues (Mga kapitbahay o mga kasama sa trabaho)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Social Media (Facebook, Tiktok, Youtube)" } ], 
+                      "pairs": [ { "value": "g.Social Media (Facebook, Tiktok, Youtube)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy)" } ], 
+                      "pairs": [ { "value": "h.Others, please specify (Iba pa, pakitukoy)" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "B2_1_OTHERS_PLEASE_SPECIFY", 
+              "labels": [ { "text": "B2.1.Others, please specify (Iba pa, pakitukoy)" } ], 
+              "contentType": "alpha", 
+              "length": 150
+            }, 
+            {
+              "name": "B2_DO_YOU_SUPPORT_THE_PROPOSED_PROJECT", 
+              "labels": [ { "text": "B2.Do you support the proposed project? (Sinusuportahan mo ba ang proyekto)" } ], 
+              "contentType": "alpha", 
+              "length": 15, 
+              "valueSets": [
+                {
+                  "name": "B2_DO_YOU_SUPPORT_THE_PROPOSED_PROJECT_VS1", 
+                  "labels": [ { "text": "B2.Do you support the proposed project? (Sinusuportahan mo ba ang proyekto)" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Yes (Oo)" } ], 
+                      "pairs": [ { "value": "a.Yes (Oo)" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "No (Hindi)" } ], 
+                      "pairs": [ { "value": "b.No (Hindi)" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "B2_IF_NO_WHY", 
+              "labels": [ { "text": "B2.If no, why? (Kung hindi, bakit?)" } ], 
+              "contentType": "alpha", 
+              "length": 150
+            }, 
+            {
+              "name": "B3_WHAT_BENEFITS_DO_YOU_THINK_CAN_BE_DERIVED_FRO", 
+              "labels": [ { "text": "B3.What benefits do you think can be derived from this project? (Can be multiple responses) (Sa iyong palagay, anu-ano ang mga benepisyong makukuha mula sa proyektong ito? (Maaaring pumili ng higit sa isa))" } ], 
+              "contentType": "alpha", 
+              "length": 7, 
+              "valueSets": [
+                {
+                  "name": "B3_WHAT_BENEFITS_DO_YOU_THINK_CAN_BE_DERIVED_FRO_VS1", 
+                  "labels": [ { "text": "B3.What benefits do you think can be derived from this project? (Can be multiple responses) (Sa iyong palagay, anu-ano ang mga benepisyong makukuha mula sa proyektong ito? (Maaaring pumili ng higit sa isa))" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Will reduce the traffic jam (Mababawasan ang traffic)" } ], 
+                      "pairs": [ { "value": "a" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Will improve comfort and convenience to passengers and car owners (Magbibigay ginhawa at mapapadali ang byahe ng mga komyuter at mga may-ari ng sasakyan)" } ], 
+                      "pairs": [ { "value": "b" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Will improve access to social amenities and facilities such as schools, hotels, recreational facilities, and hospitals (Mapapadali ang pagpunta sa mga paaralan, ospital, parks, at iba pang pasilidad)" } ], 
+                      "pairs": [ { "value": "c" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Will improve access to working place/office (Mapapadali ang pagpasok at pag-uwi mula sa trabaho)" } ], 
+                      "pairs": [ { "value": "d" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Will open up opportunities for work and business (Magbubukas ng oportunidad para sa trabaho at negosyo)" } ], 
+                      "pairs": [ { "value": "e" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Value of commercial and residential properties will increase (Tataas ang halaga ng mga residensyal at komersyal na pagmamay-ari)" } ], 
+                      "pairs": [ { "value": "f" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy)" } ], 
+                      "pairs": [ { "value": "g" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "B3_OTHERS_PLEASE_SPECIFY", 
+              "labels": [ { "text": "B3.Others, please specify (Iba pa, pakitukoy)" } ], 
+              "contentType": "alpha", 
+              "length": 200
+            }, 
+            {
+              "name": "B4_WHAT_ARE_YOUR_OVERALL_ISSUES_AND_CONCERNS_ABO", 
+              "labels": [ { "text": "B4.What are your overall issues and concerns about the proposed project? (Can be multiple responses) (Anu-ano ang iyong pangkahalatang isyu at alalahanin tungkol sa panukalang proyekto? (Maaaring pumili ng higit sa isa))" } ], 
+              "contentType": "alpha", 
+              "length": 9, 
+              "valueSets": [
+                {
+                  "name": "B4_WHAT_ARE_YOUR_OVERALL_ISSUES_AND_CONCERNS_ABO_VS1", 
+                  "labels": [ { "text": "B4.What are your overall issues and concerns about the proposed project? (Can be multiple responses) (Anu-ano ang iyong pangkahalatang isyu at alalahanin tungkol sa panukalang proyekto? (Maaaring pumili ng higit sa isa))" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "My farmland will be affected (Maaapektuhan ang lupang sakahan)" } ], 
+                      "pairs": [ { "value": "a" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "My livelihood activities will be affected/stopped during construction (Maaapektuhan o mapapatigil ang aking kabuhayan habang ginagawa ang proyekto)" } ], 
+                      "pairs": [ { "value": "b" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "I will lose income (Mawawalan ako ng mapagkakakitaan)" } ], 
+                      "pairs": [ { "value": "c" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "I will lose access to my livelihood activities (Mawawalan ako ng paraan para makapunta sa aking trabaho/pinagkakakitaan)" } ], 
+                      "pairs": [ { "value": "d" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Flooding will worsen in my community (Lalong magbabaha sa aming komunidad)" } ], 
+                      "pairs": [ { "value": "e" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Health concerns due to noise and dust (Magkakaroon ng isyu pangkalusugan dahil sa ingay at alikabok)" } ], 
+                      "pairs": [ { "value": "f" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Connection to electrical and water utilities might be affected (Maaaring maapektuhan ang koneksyon sa kuryente at tubig)" } ], 
+                      "pairs": [ { "value": "g" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Value of commercial and residential properties will decrease (Bababa ang halaga ng mga komersyal at residensyal na ari-arian)" } ], 
+                      "pairs": [ { "value": "h" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy)" } ], 
+                      "pairs": [ { "value": "i" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "B4_OTHERS_PLEASE_SPECIFY", 
+              "labels": [ { "text": "B4.Others, please specify (Iba pa, pakitukoy)" } ], 
+              "contentType": "alpha", 
+              "length": 200
+            }, 
+            {
+              "name": "B5_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR", 
+              "labels": [ { "text": "B5.What are your recommendations to address your issues and concerns? (Anu-ano ang iyong mga rekomendasyon para tugunan ang iyong mga isyu at alalahanin ukol sa proyekto?)" } ], 
+              "contentType": "alpha", 
+              "length": 150, 
+              "valueSets": [
+                {
+                  "name": "B5_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR_VS1", 
+                  "labels": [ { "text": "B5.What are your recommendations to address your issues and concerns? (Anu-ano ang iyong mga rekomendasyon para tugunan ang iyong mga isyu at alalahanin ukol sa proyekto?)" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Redesign the project (Baguhin ang disenyo ng proyekto)" } ], 
+                      "pairs": [ { "value": "a.Redesign the project" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Livelihood Restoration (Tulong para sa pagpapanumbalik ng kabuhayan)" } ], 
+                      "pairs": [ { "value": "b.Livelihood Restoration" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Provision of Compensation (Pagbibigay ng kabayaran sa mga ari-arian na apektado ng proyekto)" } ], 
+                      "pairs": [ { "value": "c.Provision of Compensation" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Financial Assistance (Tulong pinansyal)" } ], 
+                      "pairs": [ { "value": "d.Financial Assistance" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy)" } ], 
+                      "pairs": [ { "value": "e.Others, please specify" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "B5_OTHERS_PLEASE_SPECIFY", 
+              "labels": [ { "text": "B5.Others, please specify (Iba pa, pakitukoy)" } ], 
+              "contentType": "alpha", 
+              "length": 200
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

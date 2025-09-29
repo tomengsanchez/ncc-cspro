@@ -1,0 +1,45 @@
+﻿---
+fileType: Question Text
+version: CSPro 8.0
+languages:
+  - name: EN
+    label: English
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: NCC_OUTPUT_DICT.DATE_OF_SURVEY
+    conditions:
+      - questionText:
+          EN: |
+            <p class="MsoNormal" style="text-align:justify;line-height:115%"><i><span lang="EN-PH" style="font-size:11.0pt;line-height:115%;mso-bidi-font-family:Calibri;
+            mso-bidi-theme-font:minor-latin">(Nauunawaan ko na ang impormasyon na aking
+            ibibigay ay gagamitin para sa NSCR-New Clark City Extension Project at
+            ipapahayag ko ang aking pahintulot para sa EcoysCorp Inc. at mga kliyente nito
+            upang kumuha, magtala, ayusin, mag-imbak, gamitin, o burahin ang aking personal
+            na datos at iba pang impormasyon. Ang mga impormasyong ito ay ipoproseso at
+            gagamitin alinsunod sa mga probisyon na nakalagay sa Chapter 3 ng Republic Act
+            No. 10173 ng Pilipinas, ang Data Privacy Act of 2012. Nauunawaan ko rin na ang
+            nararapat na pagpapatupad ng mga tuntunin at regulasyon ay isasagawa upang
+            protektahan ang mga impormasyong ito at hindi ito gagamitin para sa ibang
+            layunin maliban sa proyektong nabanggit nang wala ang aking kaalaman at
+            pahintulot.)<o:p></o:p></span></i></p><p></p>
+...

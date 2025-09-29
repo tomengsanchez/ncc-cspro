@@ -1,0 +1,8 @@
+﻿[Run Information]
+Version=CSPro 8.0
+AppType=Entry
+
+[Files]
+Application=.\NCC Perception.ent
+InputData=.\NCC_OUTPUT.csdb
+Paradata=.\NCC Perception.cslog
