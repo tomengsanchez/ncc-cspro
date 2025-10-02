@@ -70,10 +70,10 @@
     "htmlDialogs": true, 
     "paradata": {
       "collection": "all", 
-      "recordCoordinates": false, 
+      "recordCoordinates": true, 
       "recordInitialPropertyValues": false, 
       "recordIteratorLoadCases": false, 
-      "recordValues": false, 
+      "recordValues": true, 
       "deviceStateIntervalMinutes": 5
     }, 
     "useHtmlComponentsInsteadOfNativeVersions": false
