@@ -61,7 +61,7 @@
     "showRefusals": true, 
     "sync": {
       "server": "https://ses.ecosyscorp.ph:443/api", 
-      "direction": "put"
+      "direction": "both"
     }, 
     "verify": {
       "frequency": 1, 
