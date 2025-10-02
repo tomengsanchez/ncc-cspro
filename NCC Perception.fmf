@@ -10,16 +10,6 @@ Type=SystemControlled
 File=.\NCC_Output.dcf
   
 [Form]
-Name=FORM000
-Label=(Id Items)
-Level=1
-Size=1597,300
-  
-Item=NCC_OUTPUT_ID
-  
-[EndForm]
-  
-[Form]
 Name=FORM001
 Label=NCC_Output Record
 Level=1
@@ -37,7 +27,7 @@ Item=MODE_OF_SURVEY
 Name=FORM002
 Label=A.Respondent Profile
 Level=1
-Size=1597,540
+Size=2286,662
   
 Item=A1_RESPONDENT_S_FIRST_NAME
 Item=A1_RESPONDENT_S_MIDDLE_NAME
@@ -63,7 +53,7 @@ Item=A10_1_NAME_OF_ORGANIZATION_GROUP_OPTIONAL
 Name=FORM003
 Label=B.ProjectAwarenessandAccept.
 Level=1
-Size=2472,420
+Size=3710,524
   
 Item=B1_WHAT_DO_YOU_THINK_ARE_THE_PERSISTENT_ENVIRONM
 Item=B1_OTHERS_PLEASE_SPECIFY
@@ -78,6 +68,7 @@ Item=B5_WHAT_ARE_YOUR_OVERALL_ISSUES_AND_CONCERNS_ABO
 Item=B5_OTHERS_PLEASE_SPECIFY
 Item=B6_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR
 Item=B6_OTHERS_PLEASE_SPECIFY
+Item=NCC_OUTPUT_ID
   
 [EndForm]
   
@@ -87,30 +78,9 @@ Label=NCC_Output Level
   
 [Group]
 Required=Yes
-Name=IDS0_FORM
-Label=(Id Items)
-Form=1
-Max=1
-  
-[Field]
-Name=NCC_OUTPUT_ID
-Position=227,27,797,47
-Item=NCC_OUTPUT_ID,NCC_OUTPUT_DICT
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=1
-  
-[Text]
-Position=50,30,213,46
-Text=NCC_Output Identification
- 
-[EndGroup]
-  
-[Group]
-Required=Yes
 Name=NCC_OUTPUT_REC_FORM
 Label=NCC_Output Record
-Form=2
+Form=1
 Max=1
   
 [Field]
@@ -119,7 +89,7 @@ Position=232,27,642,47
 Item=INTERVIEWER_S_SURNAME,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=2
+Form=1
   
 [Text]
 Position=50,30,193,46
@@ -132,7 +102,7 @@ Position=232,57,642,77
 Item=INTERVIEWER_S_FIRST_NAME,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=2
+Form=1
   
 [Text]
 Position=50,60,203,76
@@ -145,7 +115,7 @@ Position=232,87,642,107
 Item=INTERVIEWER_S_MIDDLE_INITIAL,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=2
+Form=1
   
 [Text]
 Position=50,90,218,106
@@ -157,7 +127,7 @@ Name=DATE_OF_SURVEY
 Position=232,117,345,137
 Item=DATE_OF_SURVEY,NCC_OUTPUT_DICT
 DataCaptureType=TextBox
-Form=2
+Form=1
   
 [Text]
 Position=50,120,151,136
@@ -169,7 +139,7 @@ Name=MODE_OF_SURVEY
 Position=232,147,933,167
 Item=MODE_OF_SURVEY,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=2
+Form=1
   
 [Text]
 Position=50,150,149,166
@@ -181,7 +151,7 @@ Text=Mode of Survey
 Required=Yes
 Name=A_RESPONDENT_PROFILE_FORM
 Label=A.Respondent Profile
-Form=3
+Form=2
 Max=1
   
 [Field]
@@ -190,7 +160,7 @@ Position=580,27,990,47
 Item=A1_RESPONDENT_S_FIRST_NAME,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,30,226,46
@@ -203,7 +173,7 @@ Position=580,57,990,77
 Item=A1_RESPONDENT_S_MIDDLE_NAME,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,60,242,76
@@ -216,7 +186,7 @@ Position=580,87,990,107
 Item=A1_RESPONDENT_S_LAST_NAME,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,90,225,106
@@ -228,7 +198,7 @@ Name=A2_MUNICIPALITY
 Position=580,117,1281,137
 Item=A2_MUNICIPALITY,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,120,147,136
@@ -240,7 +210,7 @@ Name=A3_BARANGAY_MABALACAT
 Position=580,147,2261,167
 Item=A3_BARANGAY_MABALACAT,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,150,209,166
@@ -252,7 +222,7 @@ Name=A3_BARANGAY_BAMBAN
 Position=580,177,2261,197
 Item=A3_BARANGAY_BAMBAN,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,180,196,196
@@ -264,7 +234,7 @@ Name=A3_BARANGAY_CAPAS
 Position=580,207,2261,227
 Item=A3_BARANGAY_CAPAS,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,210,182,226
@@ -276,7 +246,7 @@ Name=A4_CONTACT_NO
 Position=580,237,721,257
 Item=A4_CONTACT_NO,NCC_OUTPUT_DICT
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,240,143,256
@@ -288,7 +258,7 @@ Name=A5_AGE
 Position=580,267,721,287
 Item=A5_AGE,NCC_OUTPUT_DICT
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,270,139,286
@@ -300,7 +270,7 @@ Name=A6_SEX
 Position=580,297,1281,317
 Item=A6_SEX,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,300,163,316
@@ -312,7 +282,7 @@ Name=A7_CIVIL_STATUS
 Position=580,327,1281,347
 Item=A7_CIVIL_STATUS,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,330,266,346
@@ -324,7 +294,7 @@ Name=A8_ETHNICITY
 Position=580,357,1281,377
 Item=A8_ETHNICITY,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,360,194,376
@@ -337,7 +307,7 @@ Position=580,387,1390,407
 Item=A8_OTHERS_PLEASE_SPECIFY,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,390,330,406
@@ -349,7 +319,7 @@ Name=A9_RELIGION
 Position=580,417,1281,437
 Item=A9_RELIGION,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,420,127,436
@@ -362,7 +332,7 @@ Position=580,447,1390,467
 Item=A9_OTHERS_PLEASE_SPECIFY,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,450,330,466
@@ -374,7 +344,7 @@ Name=A10_SECTOR
 Position=580,477,1561,497
 Item=A10_SECTOR,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=3
+Form=2
   
 [Text]
 Position=50,480,118,496
@@ -387,7 +357,7 @@ Position=580,507,1390,527
 Item=A10_1_NAME_OF_ORGANIZATION_GROUP_OPTIONAL,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=3
+Form=2
   
 [Text]
 Position=50,510,566,526
@@ -399,7 +369,7 @@ Text=A10.1 Name of Organization/Group (Pangalan ng Organisasyon/Grupo) (Optional
 Required=Yes
 Name=B_PROJECT_AWARENESS_AND_ACCEPTANCE_FORM
 Label=B.ProjectAwarenessandAccept.
-Form=4
+Form=3
 Max=1
   
 [Field]
@@ -407,7 +377,7 @@ Name=B1_WHAT_DO_YOU_THINK_ARE_THE_PERSISTENT_ENVIRONM
 Position=1584,27,1739,47
 Item=B1_WHAT_DO_YOU_THINK_ARE_THE_PERSISTENT_ENVIRONM,NCC_OUTPUT_DICT
 DataCaptureType=CheckBox
-Form=4
+Form=3
   
 [Text]
 Position=50,30,1570,46
@@ -420,7 +390,7 @@ Position=1584,57,2394,77
 Item=B1_OTHERS_PLEASE_SPECIFY,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=4
+Form=3
   
 [Text]
 Position=50,60,330,76
@@ -432,7 +402,7 @@ Name=B2_HAVE_YOU_HEARD_ABOUT_THE_PROPOSED_PROJECT_BEF
 Position=1584,87,1795,107
 Item=B2_HAVE_YOU_HEARD_ABOUT_THE_PROPOSED_PROJECT_BEF,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=4
+Form=3
   
 [Text]
 Position=50,90,860,106
@@ -444,7 +414,7 @@ Name=B2_1WHERE_DID_YOU_LEARN_ABOUT_THE_PROJECT
 Position=1584,117,1697,137
 Item=B2_1WHERE_DID_YOU_LEARN_ABOUT_THE_PROJECT,NCC_OUTPUT_DICT
 DataCaptureType=CheckBox
-Form=4
+Form=3
   
 [Text]
 Position=50,120,555,136
@@ -457,7 +427,7 @@ Position=1584,147,2794,167
 Item=B2_1_OTHERS_PLEASE_SPECIFY,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=4
+Form=3
   
 [Text]
 Position=50,150,341,166
@@ -469,7 +439,7 @@ Name=B3_DO_YOU_SUPPORT_THE_PROPOSED_PROJECT
 Position=1584,177,1795,197
 Item=B3_DO_YOU_SUPPORT_THE_PROPOSED_PROJECT,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=4
+Form=3
   
 [Text]
 Position=50,180,551,196
@@ -482,7 +452,7 @@ Position=1584,207,2794,227
 Item=B3_IF_NO_WHY,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=4
+Form=3
   
 [Text]
 Position=50,210,268,226
@@ -494,7 +464,7 @@ Name=B4_WHAT_BENEFITS_DO_YOU_THINK_CAN_BE_DERIVED_FRO
 Position=1584,237,1697,257
 Item=B4_WHAT_BENEFITS_DO_YOU_THINK_CAN_BE_DERIVED_FRO,NCC_OUTPUT_DICT
 DataCaptureType=CheckBox
-Form=4
+Form=3
   
 [Text]
 Position=50,240,1396,256
@@ -507,7 +477,7 @@ Position=1584,267,3194,287
 Item=B4_OTHERS_PLEASE_SPECIFY,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=4
+Form=3
   
 [Text]
 Position=50,270,330,286
@@ -519,7 +489,7 @@ Name=B5_WHAT_ARE_YOUR_OVERALL_ISSUES_AND_CONCERNS_ABO
 Position=1584,297,1739,317
 Item=B5_WHAT_ARE_YOUR_OVERALL_ISSUES_AND_CONCERNS_ABO,NCC_OUTPUT_DICT
 DataCaptureType=CheckBox
-Form=4
+Form=3
   
 [Text]
 Position=50,300,1481,316
@@ -532,7 +502,7 @@ Position=1584,327,3194,347
 Item=B5_OTHERS_PLEASE_SPECIFY,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=4
+Form=3
   
 [Text]
 Position=50,330,330,346
@@ -544,7 +514,7 @@ Name=B6_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR
 Position=1584,357,3685,377
 Item=B6_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
-Form=4
+Form=3
   
 [Text]
 Position=50,360,1208,376
@@ -557,11 +527,24 @@ Position=1584,387,3194,407
 Item=B6_OTHERS_PLEASE_SPECIFY,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
-Form=4
+Form=3
   
 [Text]
 Position=50,390,330,406
 Text=B6.Others, please specify (Iba pa, pakitukoy)
+ 
+  
+[Field]
+Name=NCC_OUTPUT_ID
+Position=367,480,937,500
+Item=NCC_OUTPUT_ID,NCC_OUTPUT_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=177,483,340,499
+Text=NCC_Output Identification
  
 [EndGroup]
   
