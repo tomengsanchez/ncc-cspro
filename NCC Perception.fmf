@@ -15,6 +15,7 @@ Label=NCC_Output Record
 Level=1
 Size=1597,300
   
+Item=DO_YOU_AGREE_WITH_THE_DATA_PRIVACY_AGREEMENT
 Item=INTERVIEWER_S_SURNAME
 Item=INTERVIEWER_S_FIRST_NAME
 Item=INTERVIEWER_S_MIDDLE_INITIAL
@@ -27,7 +28,7 @@ Item=MODE_OF_SURVEY
 Name=FORM002
 Label=A.Respondent Profile
 Level=1
-Size=2286,662
+Size=1597,540
   
 Item=A1_RESPONDENT_S_FIRST_NAME
 Item=A1_RESPONDENT_S_MIDDLE_NAME
@@ -53,7 +54,7 @@ Item=A10_1_NAME_OF_ORGANIZATION_GROUP_OPTIONAL
 Name=FORM003
 Label=B.ProjectAwarenessandAccept.
 Level=1
-Size=3710,524
+Size=3710,544
   
 Item=B1_WHAT_DO_YOU_THINK_ARE_THE_PERSISTENT_ENVIRONM
 Item=B1_OTHERS_PLEASE_SPECIFY
@@ -84,65 +85,77 @@ Form=1
 Max=1
   
 [Field]
+Name=DO_YOU_AGREE_WITH_THE_DATA_PRIVACY_AGREEMENT
+Position=370,27,511,47
+Item=DO_YOU_AGREE_WITH_THE_DATA_PRIVACY_AGREEMENT,NCC_OUTPUT_DICT
+DataCaptureType=RadioButton
+Form=1
+  
+[Text]
+Position=50,30,356,46
+Text=Do you agree with the Data Privacy Agreement?
+ 
+  
+[Field]
 Name=INTERVIEWER_S_SURNAME
-Position=232,27,642,47
+Position=370,57,780,77
 Item=INTERVIEWER_S_SURNAME,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
 Form=1
   
 [Text]
-Position=50,30,193,46
+Position=50,60,193,76
 Text=Interviewer's Surname
  
   
 [Field]
 Name=INTERVIEWER_S_FIRST_NAME
-Position=232,57,642,77
+Position=370,87,780,107
 Item=INTERVIEWER_S_FIRST_NAME,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
 Form=1
   
 [Text]
-Position=50,60,203,76
+Position=50,90,203,106
 Text=Interviewer's First Name
  
   
 [Field]
 Name=INTERVIEWER_S_MIDDLE_INITIAL
-Position=232,87,642,107
+Position=370,117,780,137
 Item=INTERVIEWER_S_MIDDLE_INITIAL,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
 Form=1
   
 [Text]
-Position=50,90,218,106
+Position=50,120,218,136
 Text=Interviewer's Middle Initial
  
   
 [Field]
 Name=DATE_OF_SURVEY
-Position=232,117,345,137
+Position=370,147,483,167
 Item=DATE_OF_SURVEY,NCC_OUTPUT_DICT
 DataCaptureType=TextBox
 Form=1
   
 [Text]
-Position=50,120,151,136
+Position=50,150,151,166
 Text=Date of Survey: 
  
   
 [Field]
 Name=MODE_OF_SURVEY
-Position=232,147,933,167
+Position=370,177,1071,197
 Item=MODE_OF_SURVEY,NCC_OUTPUT_DICT
 DataCaptureType=RadioButton
 Form=1
   
 [Text]
-Position=50,150,149,166
+Position=50,180,149,196
 Text=Mode of Survey
  
 [EndGroup]
@@ -511,9 +524,9 @@ Text=B5.Others, please specify (Iba pa, pakitukoy)
   
 [Field]
 Name=B6_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR
-Position=1584,357,3685,377
+Position=1584,357,1669,377
 Item=B6_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR,NCC_OUTPUT_DICT
-DataCaptureType=RadioButton
+DataCaptureType=CheckBox
 Form=3
   
 [Text]
@@ -536,14 +549,14 @@ Text=B6.Others, please specify (Iba pa, pakitukoy)
   
 [Field]
 Name=NCC_OUTPUT_ID
-Position=367,480,937,500
+Position=310,499,880,519
 Item=NCC_OUTPUT_ID,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
 Form=3
   
 [Text]
-Position=177,483,340,499
+Position=120,502,283,518
 Text=NCC_Output Identification
  
 [EndGroup]

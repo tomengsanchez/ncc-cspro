@@ -46,6 +46,24 @@
           }, 
           "items": [
             {
+              "name": "DO_YOU_AGREE_WITH_THE_DATA_PRIVACY_AGREEMENT", 
+              "labels": [ { "text": "Do you agree with the Data Privacy Agreement?" } ], 
+              "contentType": "alpha", 
+              "length": 10, 
+              "valueSets": [
+                {
+                  "name": "DO_YOU_AGREE_WITH_THE_DATA_PRIVACY_AGREEMENT_VS1", 
+                  "labels": [ { "text": "Do you agree with the Data Privacy Agreement?" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "a.Yes" } ], 
+                      "pairs": [ { "value": "a.Yes" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
               "name": "INTERVIEWER_S_SURNAME", 
               "labels": [ { "text": "Interviewer's Surname" } ], 
               "contentType": "alpha", 
@@ -132,15 +150,15 @@
                   "labels": [ { "text": "A2.Municipality" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Mabalacat" } ], 
+                      "labels": [ { "text": "a.Mabalacat" } ], 
                       "pairs": [ { "value": "a.Mabalacat" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Bamban" } ], 
+                      "labels": [ { "text": "b.Bamban" } ], 
                       "pairs": [ { "value": "b.Bamban" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Capas" } ], 
+                      "labels": [ { "text": "c.Capas" } ], 
                       "pairs": [ { "value": "c.Capas" } ]
                     }
                   ]
@@ -158,35 +176,35 @@
                   "labels": [ { "text": "A3.Barangay (Mabalacat)" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Camachiles (Direct Impact)" } ], 
+                      "labels": [ { "text": "a.Camachiles (Direct Impact)" } ], 
                       "pairs": [ { "value": "a.Camachiles (Direct Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Dau (Direct Impact)" } ], 
+                      "labels": [ { "text": "b.Dau (Direct Impact)" } ], 
                       "pairs": [ { "value": "b.(Direct Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Dolores (Direct Impact)" } ], 
+                      "labels": [ { "text": "c.Dolores (Direct Impact)" } ], 
                       "pairs": [ { "value": "c.Dolores (Direct Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Mabiga (Direct Impact)" } ], 
+                      "labels": [ { "text": "d.Mabiga (Direct Impact)" } ], 
                       "pairs": [ { "value": "d.Mabiga (Direct Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "San Joaquin (Direct Impact)" } ], 
+                      "labels": [ { "text": "e.San Joaquin (Direct Impact)" } ], 
                       "pairs": [ { "value": "e.San Joaquin (Direct Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Tabun (Direct Impact)" } ], 
+                      "labels": [ { "text": "f.Tabun (Direct Impact)" } ], 
                       "pairs": [ { "value": "f.Tabun (Direct Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Poblacion (Indirect Impact)" } ], 
+                      "labels": [ { "text": "1.Poblacion (Indirect Impact)" } ], 
                       "pairs": [ { "value": "1.Poblacion (Indirect Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "San Francisco (Indirect Impact)" } ], 
+                      "labels": [ { "text": "2.San Francisco (Indirect Impact)" } ], 
                       "pairs": [ { "value": "2.San Francisco (Indirect Impact)" } ]
                     }
                   ]
@@ -204,23 +222,23 @@
                   "labels": [ { "text": "A3.Barangay (Bamban)" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Malonzo (Direct Impact)" } ], 
+                      "labels": [ { "text": "a.Malonzo (Direct Impact)" } ], 
                       "pairs": [ { "value": "a.Malonzo (Direct Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Lourdes (Direct Impact)" } ], 
+                      "labels": [ { "text": "b.Lourdes (Direct Impact)" } ], 
                       "pairs": [ { "value": "b.Lourdes (Direct Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "San Nicolas (Direct Impact)" } ], 
+                      "labels": [ { "text": "c.San Nicolas (Direct Impact)" } ], 
                       "pairs": [ { "value": "c.San Nicolas (Direct Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "San Roque (Direct Impact)" } ], 
+                      "labels": [ { "text": "d.San Roque (Direct Impact)" } ], 
                       "pairs": [ { "value": "d.San Roque (Direct Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Anupul (Direct Impact)" } ], 
+                      "labels": [ { "text": "e.Anupul (Direct Impact)" } ], 
                       "pairs": [ { "value": "e.Anupul (Direct Impact)" } ]
                     }
                   ]
@@ -238,15 +256,15 @@
                   "labels": [ { "text": "A3.Barangay (Capas)" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Aranguren (Direct Impact)" } ], 
+                      "labels": [ { "text": "a.Aranguren (Direct Impact)" } ], 
                       "pairs": [ { "value": "a.Aranguren (Direct Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Cutcut II (Direct Impact)" } ], 
+                      "labels": [ { "text": "b.Cutcut II (Direct Impact)" } ], 
                       "pairs": [ { "value": "b.Cutcut II (Direct Impact)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Santo Rosario (Indirect Impact)" } ], 
+                      "labels": [ { "text": "1.Santo Rosario (Indirect Impact)" } ], 
                       "pairs": [ { "value": "1.Santo Rosario (Indirect Impact)" } ]
                     }
                   ]
@@ -278,15 +296,15 @@
                   "labels": [ { "text": "A6.Sex (Kasarian)" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Male" } ], 
+                      "labels": [ { "text": "a.Male" } ], 
                       "pairs": [ { "value": "a.Male" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Female" } ], 
+                      "labels": [ { "text": "b.Female" } ], 
                       "pairs": [ { "value": "b.Female" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Prefer not to say" } ], 
+                      "labels": [ { "text": "c.Prefer not to say" } ], 
                       "pairs": [ { "value": "c.Prefer not to say" } ]
                     }
                   ]
@@ -304,23 +322,23 @@
                   "labels": [ { "text": "A7.Civil Status (Sibil na Katayuan)" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Single (Walang asawa)" } ], 
+                      "labels": [ { "text": "a.Single (Walang asawa)" } ], 
                       "pairs": [ { "value": "a.Single (Walang asawa)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Married (May-asawa)" } ], 
+                      "labels": [ { "text": "b.Married (May-asawa)" } ], 
                       "pairs": [ { "value": "b.Married (May-asawa)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Live-in (May kinakasama)" } ], 
+                      "labels": [ { "text": "c.Live-in (May kinakasama)" } ], 
                       "pairs": [ { "value": "c.Live-in (May kinakasama)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Widowed (Balo)" } ], 
+                      "labels": [ { "text": "d.Widowed (Balo)" } ], 
                       "pairs": [ { "value": "d.Widowed (Balo)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Separated (Hiwalay)" } ], 
+                      "labels": [ { "text": "e.Separated (Hiwalay)" } ], 
                       "pairs": [ { "value": "e.Separated (Hiwalay)" } ]
                     }
                   ]
@@ -338,39 +356,39 @@
                   "labels": [ { "text": "A8.Ethnicity (Etnisidad)" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Tagalog" } ], 
+                      "labels": [ { "text": "a.Tagalog" } ], 
                       "pairs": [ { "value": "a.Tagalog" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Bisaya" } ], 
+                      "labels": [ { "text": "b.Bisaya" } ], 
                       "pairs": [ { "value": "b.Bisaya" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Ilocano" } ], 
+                      "labels": [ { "text": "c.Ilocano" } ], 
                       "pairs": [ { "value": "c.Ilocano" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Kapampangan" } ], 
+                      "labels": [ { "text": "d.Kapampangan" } ], 
                       "pairs": [ { "value": "d.Kapampangan" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Ilonggo" } ], 
+                      "labels": [ { "text": "e.Ilonggo" } ], 
                       "pairs": [ { "value": "e.Ilonggo" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Bikol" } ], 
+                      "labels": [ { "text": "f.Bikol" } ], 
                       "pairs": [ { "value": "f.Bikol" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Waray" } ], 
+                      "labels": [ { "text": "g.Waray" } ], 
                       "pairs": [ { "value": "g.Waray" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Pangasinense" } ], 
+                      "labels": [ { "text": "h.Pangasinense" } ], 
                       "pairs": [ { "value": "h.Pangasinense" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy): " } ], 
+                      "labels": [ { "text": "i.Others, please specify (Iba pa, pakitukoy): " } ], 
                       "pairs": [ { "value": "i.Others, please specify" } ]
                     }
                   ]
@@ -394,35 +412,35 @@
                   "labels": [ { "text": "A9.Religion " } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Roman Catholic" } ], 
+                      "labels": [ { "text": "a.Roman Catholic" } ], 
                       "pairs": [ { "value": "a.Roman Catholic" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Islam" } ], 
+                      "labels": [ { "text": "b.Islam" } ], 
                       "pairs": [ { "value": "b.Islam" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Iglesia ni Cristo" } ], 
+                      "labels": [ { "text": "c.Iglesia ni Cristo" } ], 
                       "pairs": [ { "value": "c.Iglesia ni Cristo" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Seventh Day Adventist" } ], 
+                      "labels": [ { "text": "d.Seventh Day Adventist" } ], 
                       "pairs": [ { "value": "d.Seventh Day Adventist" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Aglipay" } ], 
+                      "labels": [ { "text": "e.Aglipay" } ], 
                       "pairs": [ { "value": "e.Aglipay" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Jehovah's Witness" } ], 
+                      "labels": [ { "text": "f.Jehovah's Witness" } ], 
                       "pairs": [ { "value": "f.Jehovah's Witness" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Pentecostal" } ], 
+                      "labels": [ { "text": "g.Pentecostal" } ], 
                       "pairs": [ { "value": "g.Pentecostal" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy): " } ], 
+                      "labels": [ { "text": "h.Others, please specify (Iba pa, pakitukoy): " } ], 
                       "pairs": [ { "value": "h.Others, please specify" } ]
                     }
                   ]
@@ -446,55 +464,55 @@
                   "labels": [ { "text": "A10.Sector" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Farmers" } ], 
+                      "labels": [ { "text": "a.Farmers" } ], 
                       "pairs": [ { "value": "a.Farmers" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Youth" } ], 
+                      "labels": [ { "text": "b.Youth" } ], 
                       "pairs": [ { "value": "b.Youth" } ]
                     }, 
                     {
-                      "labels": [ { "text": "NGO/Civil Society" } ], 
+                      "labels": [ { "text": "c.NGO/Civil Society" } ], 
                       "pairs": [ { "value": "c.NGO/Civil Society" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Religious Sector" } ], 
+                      "labels": [ { "text": "d.Religious Sector" } ], 
                       "pairs": [ { "value": "d.Religious Sector" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Business Sector" } ], 
+                      "labels": [ { "text": "e.Business Sector" } ], 
                       "pairs": [ { "value": "e.Business Sector" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Women's Group" } ], 
+                      "labels": [ { "text": "f.Women's Group" } ], 
                       "pairs": [ { "value": "f.Women's Group" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Transport Group" } ], 
+                      "labels": [ { "text": "g.Transport Group" } ], 
                       "pairs": [ { "value": "g.Transport Group" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Senior Citizen" } ], 
+                      "labels": [ { "text": "h.Senior Citizen" } ], 
                       "pairs": [ { "value": "h.Senior Citizen" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Health Sector" } ], 
+                      "labels": [ { "text": "i.Health Sector" } ], 
                       "pairs": [ { "value": "i.Health Sector" } ]
                     }, 
                     {
-                      "labels": [ { "text": "PNP/Barangay Tanod" } ], 
+                      "labels": [ { "text": "j.PNP/Barangay Tanod" } ], 
                       "pairs": [ { "value": "j.PNP/Barangay Tanod" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Teacher's Association/Academe" } ], 
+                      "labels": [ { "text": "k.Teacher's Association/Academe" } ], 
                       "pairs": [ { "value": "k.Teacher's Association/Academe" } ]
                     }, 
                     {
-                      "labels": [ { "text": "PWD" } ], 
+                      "labels": [ { "text": "l.PWD" } ], 
                       "pairs": [ { "value": "l.PWD" } ]
                     }, 
                     {
-                      "labels": [ { "text": "LGU/Brgy. Council Representative" } ], 
+                      "labels": [ { "text": "m.LGU/Brgy. Council Representative" } ], 
                       "pairs": [ { "value": "m.LGU/Brgy. Council Representative" } ]
                     }
                   ]
@@ -529,47 +547,47 @@
                   "labels": [ { "text": "B1.What do you think are the persistent environmental problems in your community? (Can be multiple responses) (Sa iyong palagay, ano ang mga paulit-ulit na problema sa kalikasan sa inyong komunidad? (Maaaring pumili ng higit sa isa))" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Problems with solid waste management or garbage disposal (Problema sa basura)" } ], 
+                      "labels": [ { "text": "a.Problems with solid waste management or garbage disposal (Problema sa basura)" } ], 
                       "pairs": [ { "value": "a" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Dirty water or liquid waste from households or factories (Maruming Tubig)" } ], 
+                      "labels": [ { "text": "b.Dirty water or liquid waste from households or factories (Maruming Tubig)" } ], 
                       "pairs": [ { "value": "b" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Air pollution from vehicles and/or factories (Polusyon sa hangin mula sa mga sasakyan at pabrika)" } ], 
+                      "labels": [ { "text": "c.Air pollution from vehicles and/or factories (Polusyon sa hangin mula sa mga sasakyan at pabrika)" } ], 
                       "pairs": [ { "value": "c" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Frequent and widespread flooding (Madalas at malawakang pagbaha) " } ], 
+                      "labels": [ { "text": "d.Frequent and widespread flooding (Madalas at malawakang pagbaha) " } ], 
                       "pairs": [ { "value": "d" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Environmental degradation like deforestation and the death of animals (Pagkasira ng kalikasan)" } ], 
+                      "labels": [ { "text": "e.Environmental degradation like deforestation and the death of animals (Pagkasira ng kalikasan)" } ], 
                       "pairs": [ { "value": "e" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Drought or lack of water (Tagtuyot o kakulangan sa tubig)" } ], 
+                      "labels": [ { "text": "f.Drought or lack of water (Tagtuyot o kakulangan sa tubig)" } ], 
                       "pairs": [ { "value": "f" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Noise and Vibration (Sobrang ingay at pagyanig)" } ], 
+                      "labels": [ { "text": "g.Noise and Vibration (Sobrang ingay at pagyanig)" } ], 
                       "pairs": [ { "value": "g" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Loss of various types of plants and animals or “Biodiversity Loss” (Mababawasan ang mga uri ng halaman at hayop) " } ], 
+                      "labels": [ { "text": "h.Loss of various types of plants and animals or “Biodiversity Loss” (Mababawasan ang mga uri ng halaman at hayop) " } ], 
                       "pairs": [ { "value": "h" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Extreme heat or “heat wave” (Sobrang init na panahon) " } ], 
+                      "labels": [ { "text": "i.Extreme heat or “heat wave” (Sobrang init na panahon) " } ], 
                       "pairs": [ { "value": "i" } ]
                     }, 
                     {
-                      "labels": [ { "text": "None (Wala)" } ], 
+                      "labels": [ { "text": "j.None (Wala)" } ], 
                       "pairs": [ { "value": "j" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy)" } ], 
+                      "labels": [ { "text": "k.Others, please specify (Iba pa, pakitukoy)" } ], 
                       "pairs": [ { "value": "k" } ]
                     }
                   ]
@@ -593,11 +611,11 @@
                   "labels": [ { "text": "B2.Have you heard about the proposed project before? (Pamilyar ka na ba sa panukalang proyekto/Narinig mo na ba ito noon?)" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Yes (Oo)" } ], 
+                      "labels": [ { "text": "a.Yes (Oo)" } ], 
                       "pairs": [ { "value": "a.Yes (Oo)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "No (Hindi)" } ], 
+                      "labels": [ { "text": "b.No (Hindi)" } ], 
                       "pairs": [ { "value": "b.No (Hindi)" } ]
                     }
                   ]
@@ -615,35 +633,35 @@
                   "labels": [ { "text": "B2.1.Where did you learn about the project? (Saan mo nalaman ang proyekto?)" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Consultation Meeting with DOTr/LGU/EcosysCorp (Consultation Meeting kasama ang DOTr/LGU/EcosysCorp)" } ], 
+                      "labels": [ { "text": "a.Consultation Meeting with DOTr/LGU/EcosysCorp (Consultation Meeting kasama ang DOTr/LGU/EcosysCorp)" } ], 
                       "pairs": [ { "value": "a" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Meeting with the Barangay (Meeting kasama ang Barangay)" } ], 
+                      "labels": [ { "text": "b.Meeting with the Barangay (Meeting kasama ang Barangay)" } ], 
                       "pairs": [ { "value": "b" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Poster, brochure, and/or public announcement (Poster, brochure, at public announcement)" } ], 
+                      "labels": [ { "text": "c.Poster, brochure, and/or public announcement (Poster, brochure, at public announcement)" } ], 
                       "pairs": [ { "value": "c" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Surveys" } ], 
+                      "labels": [ { "text": "d.Surveys" } ], 
                       "pairs": [ { "value": "d" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Television/Radio/Newspaper (Telebisyon/Radyo/Newspaper)" } ], 
+                      "labels": [ { "text": "e.Television/Radio/Newspaper (Telebisyon/Radyo/Newspaper)" } ], 
                       "pairs": [ { "value": "e" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Neighbors/Work Colleagues (Mga kapitbahay o mga kasama sa trabaho)" } ], 
+                      "labels": [ { "text": "f.Neighbors/Work Colleagues (Mga kapitbahay o mga kasama sa trabaho)" } ], 
                       "pairs": [ { "value": "f" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Social Media (Facebook, Tiktok, Youtube)" } ], 
+                      "labels": [ { "text": "g.Social Media (Facebook, Tiktok, Youtube)" } ], 
                       "pairs": [ { "value": "g" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy)" } ], 
+                      "labels": [ { "text": "h.Others, please specify (Iba pa, pakitukoy)" } ], 
                       "pairs": [ { "value": "h" } ]
                     }
                   ]
@@ -667,11 +685,11 @@
                   "labels": [ { "text": "B3.Do you support the proposed project? (Sinusuportahan mo ba ang proyekto)" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Yes (Oo)" } ], 
+                      "labels": [ { "text": "a.Yes (Oo)" } ], 
                       "pairs": [ { "value": "a.Yes (Oo)" } ]
                     }, 
                     {
-                      "labels": [ { "text": "No (Hindi)" } ], 
+                      "labels": [ { "text": "b.No (Hindi)" } ], 
                       "pairs": [ { "value": "b.No (Hindi)" } ]
                     }
                   ]
@@ -695,35 +713,35 @@
                   "labels": [ { "text": "B4.What benefits do you think can be derived from this project? (Can be multiple responses) (Sa iyong palagay, anu-ano ang mga benepisyong makukuha mula sa proyektong ito? (Maaaring pumili ng higit sa isa))" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Will reduce the traffic jam (Mababawasan ang traffic)" } ], 
+                      "labels": [ { "text": "a.Will reduce the traffic jam (Mababawasan ang traffic)" } ], 
                       "pairs": [ { "value": "a" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Will improve comfort and convenience to passengers and car owners (Magbibigay ginhawa at mapapadali ang byahe ng mga komyuter at mga may-ari ng sasakyan)" } ], 
+                      "labels": [ { "text": "b.Will improve comfort and convenience to passengers and car owners (Magbibigay ginhawa at mapapadali ang byahe ng mga komyuter at mga may-ari ng sasakyan)" } ], 
                       "pairs": [ { "value": "b" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Will improve access to social amenities and facilities such as schools, hotels, recreational facilities, and hospitals (Mapapadali ang pagpunta sa mga paaralan, ospital, parks, at iba pang pasilidad)" } ], 
+                      "labels": [ { "text": "c.Will improve access to social amenities and facilities such as schools, hotels, recreational facilities, and hospitals (Mapapadali ang pagpunta sa mga paaralan, ospital, parks, at iba pang pasilidad)" } ], 
                       "pairs": [ { "value": "c" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Will improve access to working place/office (Mapapadali ang pagpasok at pag-uwi mula sa trabaho)" } ], 
+                      "labels": [ { "text": "d.Will improve access to working place/office (Mapapadali ang pagpasok at pag-uwi mula sa trabaho)" } ], 
                       "pairs": [ { "value": "d" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Will open up opportunities for work and business (Magbubukas ng oportunidad para sa trabaho at negosyo)" } ], 
+                      "labels": [ { "text": "e.Will open up opportunities for work and business (Magbubukas ng oportunidad para sa trabaho at negosyo)" } ], 
                       "pairs": [ { "value": "e" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Value of commercial and residential properties will increase (Tataas ang halaga ng mga residensyal at komersyal na pagmamay-ari)" } ], 
+                      "labels": [ { "text": "f.Value of commercial and residential properties will increase (Tataas ang halaga ng mga residensyal at komersyal na pagmamay-ari)" } ], 
                       "pairs": [ { "value": "f" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Will reduce transportation expenses (Mababawasan ang gastusin sa byahe)" } ], 
+                      "labels": [ { "text": "g.Will reduce transportation expenses (Mababawasan ang gastusin sa byahe)" } ], 
                       "pairs": [ { "value": "g" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy)" } ], 
+                      "labels": [ { "text": "h.Others, please specify (Iba pa, pakitukoy)" } ], 
                       "pairs": [ { "value": "h" } ]
                     }
                   ]
@@ -747,47 +765,47 @@
                   "labels": [ { "text": "B5.What are your overall issues and concerns about the proposed project? (Can be multiple responses) (Anu-ano ang iyong pangkahalatang isyu at alalahanin tungkol sa panukalang proyekto? (Maaaring pumili ng higit sa isa))" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "My farmland will be affected (Maaapektuhan ang lupang sakahan)" } ], 
+                      "labels": [ { "text": "a.My farmland will be affected (Maaapektuhan ang lupang sakahan)" } ], 
                       "pairs": [ { "value": "a" } ]
                     }, 
                     {
-                      "labels": [ { "text": "My livelihood activities will be affected/stopped during construction (Maaapektuhan o mapapatigil ang aking kabuhayan habang ginagawa ang proyekto)" } ], 
+                      "labels": [ { "text": "b.My livelihood activities will be affected/stopped during construction (Maaapektuhan o mapapatigil ang aking kabuhayan habang ginagawa ang proyekto)" } ], 
                       "pairs": [ { "value": "b" } ]
                     }, 
                     {
-                      "labels": [ { "text": "I will lose income (Mawawalan ako ng mapagkakakitaan)" } ], 
+                      "labels": [ { "text": "c.I will lose income (Mawawalan ako ng mapagkakakitaan)" } ], 
                       "pairs": [ { "value": "c" } ]
                     }, 
                     {
-                      "labels": [ { "text": "I will lose access to my livelihood activities (Mawawalan ako ng paraan para makapunta sa aking trabaho/pinagkakakitaan)" } ], 
+                      "labels": [ { "text": "d.I will lose access to my livelihood activities (Mawawalan ako ng paraan para makapunta sa aking trabaho/pinagkakakitaan)" } ], 
                       "pairs": [ { "value": "d" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Flooding will worsen in my community (Lalong magbabaha sa aming komunidad)" } ], 
+                      "labels": [ { "text": "e.Flooding will worsen in my community (Lalong magbabaha sa aming komunidad)" } ], 
                       "pairs": [ { "value": "e" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Health concerns due to noise and dust (Magkakaroon ng isyu pangkalusugan dahil sa ingay at alikabok)" } ], 
+                      "labels": [ { "text": "f.Health concerns due to noise and dust (Magkakaroon ng isyu pangkalusugan dahil sa ingay at alikabok)" } ], 
                       "pairs": [ { "value": "f" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Connection to electrical and water utilities might be affected (Maaaring maapektuhan ang koneksyon sa kuryente at tubig)" } ], 
+                      "labels": [ { "text": "g.Connection to electrical and water utilities might be affected (Maaaring maapektuhan ang koneksyon sa kuryente at tubig)" } ], 
                       "pairs": [ { "value": "g" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Value of commercial and residential properties will decrease (Bababa ang halaga ng mga komersyal at residensyal na ari-arian)" } ], 
+                      "labels": [ { "text": "h.Value of commercial and residential properties will decrease (Bababa ang halaga ng mga komersyal at residensyal na ari-arian)" } ], 
                       "pairs": [ { "value": "h" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Concerns with safety and security in the community (Magkakaroon ng pangamba sa kaligtasan at seguridad sa komunidad)" } ], 
+                      "labels": [ { "text": "i.Concerns with safety and security in the community (Magkakaroon ng pangamba sa kaligtasan at seguridad sa komunidad)" } ], 
                       "pairs": [ { "value": "i" } ]
                     }, 
                     {
-                      "labels": [ { "text": "No Answer (Walang kasagutan)" } ], 
+                      "labels": [ { "text": "j.No Answer (Walang kasagutan)" } ], 
                       "pairs": [ { "value": "j" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy)" } ], 
+                      "labels": [ { "text": "k.Others, please specify (Iba pa, pakitukoy)" } ], 
                       "pairs": [ { "value": "k" } ]
                     }
                   ]
@@ -804,35 +822,35 @@
               "name": "B6_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR", 
               "labels": [ { "text": "B6.What are your recommendations to address your issues and concerns? (Anu-ano ang iyong mga rekomendasyon para tugunan ang iyong mga isyu at alalahanin ukol sa proyekto?)" } ], 
               "contentType": "alpha", 
-              "length": 150, 
+              "length": 6, 
               "valueSets": [
                 {
                   "name": "B6_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR_VS1", 
                   "labels": [ { "text": "B6.What are your recommendations to address your issues and concerns? (Anu-ano ang iyong mga rekomendasyon para tugunan ang iyong mga isyu at alalahanin ukol sa proyekto?)" } ], 
                   "values": [
                     {
-                      "labels": [ { "text": "Redesign the project (Baguhin ang disenyo ng proyekto)" } ], 
-                      "pairs": [ { "value": "a.Redesign the project" } ]
+                      "labels": [ { "text": "a.Redesign the project (Baguhin ang disenyo ng proyekto)" } ], 
+                      "pairs": [ { "value": "a" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Livelihood Restoration (Tulong para sa pagpapanumbalik ng kabuhayan)" } ], 
-                      "pairs": [ { "value": "b.Livelihood Restoration" } ]
+                      "labels": [ { "text": "b.Livelihood Restoration (Tulong para sa pagpapanumbalik ng kabuhayan)" } ], 
+                      "pairs": [ { "value": "b" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Provision of Compensation (Pagbibigay ng kabayaran sa mga ari-arian na apektado ng proyekto)" } ], 
-                      "pairs": [ { "value": "c.Provision of Compensation" } ]
+                      "labels": [ { "text": "c.Provision of Compensation (Pagbibigay ng kabayaran sa mga ari-arian na apektado ng proyekto)" } ], 
+                      "pairs": [ { "value": "c" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Financial Assistance (Tulong pinansyal)" } ], 
-                      "pairs": [ { "value": "d.Financial Assistance" } ]
+                      "labels": [ { "text": "d.Financial Assistance (Tulong pinansyal)" } ], 
+                      "pairs": [ { "value": "d" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Affordable Train Fare (Magbigay ng mas mababang halaga na pamasahe sa proyekto)" } ], 
-                      "pairs": [ { "value": "e.(Magbigay ng mas mababang halaga na pamasahe sa proyekto)" } ]
+                      "labels": [ { "text": "e.Affordable Train Fare (Magbigay ng mas mababang halaga na pamasahe sa proyekto)" } ], 
+                      "pairs": [ { "value": "e" } ]
                     }, 
                     {
-                      "labels": [ { "text": "Others, please specify (Iba pa, pakitukoy)" } ], 
-                      "pairs": [ { "value": "f.Others, please specify" } ]
+                      "labels": [ { "text": "f.Others, please specify (Iba pa, pakitukoy)" } ], 
+                      "pairs": [ { "value": "f" } ]
                     }
                   ]
                 }
