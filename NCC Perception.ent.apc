@@ -96,6 +96,12 @@ set behavior() canenter(notappl) on (noconfirm);
 
 postproc
 set behavior() canenter(notappl) off (noconfirm);
+PROC B1_WHAT_DO_YOU_THINK_ARE_THE_PERSISTENT_ENVIRONM
+
+if B1_WHAT_DO_YOU_THINK_ARE_THE_PERSISTENT_ENVIRONM = "" then
+errmsg("This field is required.");
+reenter;
+endif;
 PROC B1_OTHERS_PLEASE_SPECIFY
 
 preproc
@@ -105,6 +111,12 @@ endif;
 
 postproc
 if B1_OTHERS_PLEASE_SPECIFY = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC B2_1WHERE_DID_YOU_LEARN_ABOUT_THE_PROJECT
+
+if B2_1WHERE_DID_YOU_LEARN_ABOUT_THE_PROJECT = "" then
 errmsg("This field is required.");
 reenter;
 endif;
@@ -132,6 +144,12 @@ if B3_IF_NO_WHY = "" then
 errmsg("This field is required.");
 reenter;
 endif;
+PROC B4_WHAT_BENEFITS_DO_YOU_THINK_CAN_BE_DERIVED_FRO
+
+if B4_WHAT_BENEFITS_DO_YOU_THINK_CAN_BE_DERIVED_FRO = "" then
+errmsg("This field is required.");
+reenter;
+endif;
 PROC B4_OTHERS_PLEASE_SPECIFY
 
 preproc
@@ -144,6 +162,12 @@ if B4_OTHERS_PLEASE_SPECIFY = "" then
 errmsg("This field is required.");
 reenter;
 endif;
+PROC B5_WHAT_ARE_YOUR_OVERALL_ISSUES_AND_CONCERNS_ABO
+
+if B5_WHAT_ARE_YOUR_OVERALL_ISSUES_AND_CONCERNS_ABO = "" then
+errmsg("This field is required.");
+reenter;
+endif;
 PROC B5_OTHERS_PLEASE_SPECIFY
 
 preproc
@@ -153,6 +177,12 @@ endif;
 
 postproc
 if B5_OTHERS_PLEASE_SPECIFY = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC B6_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR
+
+if B6_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR = "" then
 errmsg("This field is required.");
 reenter;
 endif;
