@@ -29,6 +29,24 @@ PROC DATE_OF_SURVEY
 preproc
 setproperty(DATE_OF_SURVEY,"CaptureType", "Date");
 setproperty(DATE_OF_SURVEY,"CaptureDateFormat", "MMDDYYYY");
+PROC A1_RESPONDENT_S_FIRST_NAME
+
+if A1_RESPONDENT_S_FIRST_NAME = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC A1_RESPONDENT_S_MIDDLE_NAME
+
+if A1_RESPONDENT_S_MIDDLE_NAME = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC A1_RESPONDENT_S_LAST_NAME
+
+if A1_RESPONDENT_S_LAST_NAME = "" then
+errmsg("This field is required.");
+reenter;
+endif;
 PROC A3_BARANGAY_MABALACAT
 
 preproc
