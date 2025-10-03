@@ -30,9 +30,9 @@ Label=A.Respondent Profile
 Level=1
 Size=1597,540
   
+Item=A1_RESPONDENT_S_LAST_NAME
 Item=A1_RESPONDENT_S_FIRST_NAME
 Item=A1_RESPONDENT_S_MIDDLE_NAME
-Item=A1_RESPONDENT_S_LAST_NAME
 Item=A2_MUNICIPALITY
 Item=A3_BARANGAY_MABALACAT
 Item=A3_BARANGAY_BAMBAN
@@ -54,7 +54,7 @@ Item=A10_1_NAME_OF_ORGANIZATION_GROUP_OPTIONAL
 Name=FORM003
 Label=B.ProjectAwarenessandAccept.
 Level=1
-Size=3710,544
+Size=3219,539
   
 Item=B1_WHAT_DO_YOU_THINK_ARE_THE_PERSISTENT_ENVIRONM
 Item=B1_OTHERS_PLEASE_SPECIFY
@@ -168,42 +168,42 @@ Form=2
 Max=1
   
 [Field]
-Name=A1_RESPONDENT_S_FIRST_NAME
-Position=580,27,990,47
-Item=A1_RESPONDENT_S_FIRST_NAME,NCC_OUTPUT_DICT
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=2
-  
-[Text]
-Position=50,30,226,46
-Text=A1.Respondent's First Name
- 
-  
-[Field]
-Name=A1_RESPONDENT_S_MIDDLE_NAME
-Position=580,57,990,77
-Item=A1_RESPONDENT_S_MIDDLE_NAME,NCC_OUTPUT_DICT
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=2
-  
-[Text]
-Position=50,60,242,76
-Text=A1.Respondent's Middle Name
- 
-  
-[Field]
 Name=A1_RESPONDENT_S_LAST_NAME
-Position=580,87,990,107
+Position=580,27,990,47
 Item=A1_RESPONDENT_S_LAST_NAME,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
 Form=2
   
 [Text]
-Position=50,90,225,106
+Position=50,30,225,46
 Text=A1.Respondent's Last Name
+ 
+  
+[Field]
+Name=A1_RESPONDENT_S_FIRST_NAME
+Position=580,57,990,77
+Item=A1_RESPONDENT_S_FIRST_NAME,NCC_OUTPUT_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=2
+  
+[Text]
+Position=50,60,226,76
+Text=A1.Respondent's First Name
+ 
+  
+[Field]
+Name=A1_RESPONDENT_S_MIDDLE_NAME
+Position=580,87,990,107
+Item=A1_RESPONDENT_S_MIDDLE_NAME,NCC_OUTPUT_DICT
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=2
+  
+[Text]
+Position=50,90,242,106
+Text=A1.Respondent's Middle Name
  
   
 [Field]
@@ -549,14 +549,14 @@ Text=B6.Others, please specify (Iba pa, pakitukoy)
   
 [Field]
 Name=NCC_OUTPUT_ID
-Position=310,499,880,519
+Position=440,494,1010,514
 Item=NCC_OUTPUT_ID,NCC_OUTPUT_DICT
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
 Form=3
   
 [Text]
-Position=120,502,283,518
+Position=250,497,413,513
 Text=NCC_Output Identification
  
 [EndGroup]

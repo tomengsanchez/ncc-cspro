@@ -122,6 +122,12 @@
           }, 
           "items": [
             {
+              "name": "A1_RESPONDENT_S_LAST_NAME", 
+              "labels": [ { "text": "A1.Respondent's Last Name" } ], 
+              "contentType": "alpha", 
+              "length": 50
+            }, 
+            {
               "name": "A1_RESPONDENT_S_FIRST_NAME", 
               "labels": [ { "text": "A1.Respondent's First Name" } ], 
               "contentType": "alpha", 
@@ -130,12 +136,6 @@
             {
               "name": "A1_RESPONDENT_S_MIDDLE_NAME", 
               "labels": [ { "text": "A1.Respondent's Middle Name" } ], 
-              "contentType": "alpha", 
-              "length": 50
-            }, 
-            {
-              "name": "A1_RESPONDENT_S_LAST_NAME", 
-              "labels": [ { "text": "A1.Respondent's Last Name" } ], 
               "contentType": "alpha", 
               "length": 50
             }, 
