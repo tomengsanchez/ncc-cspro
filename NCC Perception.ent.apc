@@ -6,15 +6,47 @@ PROC NCC_OUTPUT_FF
 
 
 preproc
-PROC NCC_OUTPUT_ID
-PreProc
-	NCC_OUTPUT_ID = concat(strip(A1_RESPONDENT_S_LAST_NAME),"-",strip(A1_RESPONDENT_S_FIRST_NAME),"-",strip(A1_RESPONDENT_S_MIDDLE_NAME));
-	//A1_RESPONDENT_S_FIRST_NAME
+PROC INTERVIEWER_S_SURNAME
+
+if INTERVIEWER_S_SURNAME = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC INTERVIEWER_S_FIRST_NAME
+
+if INTERVIEWER_S_FIRST_NAME = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC INTERVIEWER_S_MIDDLE_INITIAL
+
+if INTERVIEWER_S_MIDDLE_INITIAL = "" then
+errmsg("This field is required.");
+reenter;
+endif;
 PROC DATE_OF_SURVEY
 
 preproc
 setproperty(DATE_OF_SURVEY,"CaptureType", "Date");
 setproperty(DATE_OF_SURVEY,"CaptureDateFormat", "MMDDYYYY");
+PROC A1_RESPONDENT_S_FIRST_NAME
+
+if A1_RESPONDENT_S_FIRST_NAME = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC A1_RESPONDENT_S_MIDDLE_NAME
+
+if A1_RESPONDENT_S_MIDDLE_NAME = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC A1_RESPONDENT_S_LAST_NAME
+
+if A1_RESPONDENT_S_LAST_NAME = "" then
+errmsg("This field is required.");
+reenter;
+endif;
 PROC A3_BARANGAY_MABALACAT
 
 preproc
@@ -39,11 +71,23 @@ preproc
 if A8_ETHNICITY <> "i.Others, please specify" then
 skip;
 endif;
+
+postproc
+if A8_OTHERS_PLEASE_SPECIFY = "" then
+errmsg("This field is required.");
+reenter;
+endif;
 PROC A9_OTHERS_PLEASE_SPECIFY
 
 preproc
 if A9_RELIGION <> "h.Others, please specify" then
 skip;
+endif;
+
+postproc
+if A9_OTHERS_PLEASE_SPECIFY = "" then
+errmsg("This field is required.");
+reenter;
 endif;
 PROC A10_1_NAME_OF_ORGANIZATION_GROUP_OPTIONAL
 
@@ -52,11 +96,29 @@ set behavior() canenter(notappl) on (noconfirm);
 
 postproc
 set behavior() canenter(notappl) off (noconfirm);
+PROC B1_WHAT_DO_YOU_THINK_ARE_THE_PERSISTENT_ENVIRONM
+
+if B1_WHAT_DO_YOU_THINK_ARE_THE_PERSISTENT_ENVIRONM = "" then
+errmsg("This field is required.");
+reenter;
+endif;
 PROC B1_OTHERS_PLEASE_SPECIFY
 
 preproc
 if pos("k", B1_WHAT_DO_YOU_THINK_ARE_THE_PERSISTENT_ENVIRONM) = 0 then
 skip;
+endif;
+
+postproc
+if B1_OTHERS_PLEASE_SPECIFY = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC B2_1WHERE_DID_YOU_LEARN_ABOUT_THE_PROJECT
+
+if B2_1WHERE_DID_YOU_LEARN_ABOUT_THE_PROJECT = "" then
+errmsg("This field is required.");
+reenter;
 endif;
 PROC B2_1_OTHERS_PLEASE_SPECIFY
 
@@ -64,11 +126,29 @@ preproc
 if pos("h", B2_1WHERE_DID_YOU_LEARN_ABOUT_THE_PROJECT) = 0 then
 skip;
 endif;
+
+postproc
+if B2_1_OTHERS_PLEASE_SPECIFY = "" then
+errmsg("This field is required.");
+reenter;
+endif;
 PROC B3_IF_NO_WHY
 
 preproc
 if B3_DO_YOU_SUPPORT_THE_PROPOSED_PROJECT <> "b.No (Hindi)" then
 skip;
+endif;
+
+postproc
+if B3_IF_NO_WHY = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC B4_WHAT_BENEFITS_DO_YOU_THINK_CAN_BE_DERIVED_FRO
+
+if B4_WHAT_BENEFITS_DO_YOU_THINK_CAN_BE_DERIVED_FRO = "" then
+errmsg("This field is required.");
+reenter;
 endif;
 PROC B4_OTHERS_PLEASE_SPECIFY
 
@@ -76,11 +156,35 @@ preproc
 if pos("h", B4_WHAT_BENEFITS_DO_YOU_THINK_CAN_BE_DERIVED_FRO) = 0 then
 skip;
 endif;
+
+postproc
+if B4_OTHERS_PLEASE_SPECIFY = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC B5_WHAT_ARE_YOUR_OVERALL_ISSUES_AND_CONCERNS_ABO
+
+if B5_WHAT_ARE_YOUR_OVERALL_ISSUES_AND_CONCERNS_ABO = "" then
+errmsg("This field is required.");
+reenter;
+endif;
 PROC B5_OTHERS_PLEASE_SPECIFY
 
 preproc
 if pos("k", B5_WHAT_ARE_YOUR_OVERALL_ISSUES_AND_CONCERNS_ABO) = 0 then
 skip;
+endif;
+
+postproc
+if B5_OTHERS_PLEASE_SPECIFY = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC B6_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR
+
+if B6_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR = "" then
+errmsg("This field is required.");
+reenter;
 endif;
 PROC B6_OTHERS_PLEASE_SPECIFY
 
@@ -88,3 +192,13 @@ preproc
 if pos("f", B6_WHAT_ARE_YOUR_RECOMMENDATIONS_TO_ADDRESS_YOUR) = 0 then
 skip;
 endif;
+
+postproc
+if B6_OTHERS_PLEASE_SPECIFY = "" then
+errmsg("This field is required.");
+reenter;
+endif;
+PROC NCC_OUTPUT_ID
+PreProc
+	NCC_OUTPUT_ID = concat(strip(A1_RESPONDENT_S_LAST_NAME),"-",strip(A1_RESPONDENT_S_FIRST_NAME),"-",strip(A1_RESPONDENT_S_MIDDLE_NAME));
+	//A1_RESPONDENT_S_FIRST_NAME
